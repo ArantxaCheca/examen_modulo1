@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* ---------- UTILIDADES ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none;
+}
+
+/* ---------- TARJETAS ---------- */
+.card-rating,
+.card-thanks {
+  background: hsl(213, 19%, 18%);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: hsl(213, 19%, 23%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-icon-img {
+  width: 15px;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ---------- RATING ---------- */
+.rating-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rating-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.rating-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: hsl(213, 19%, 23%);
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.rating-btn:hover {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+
+input[type="radio"]:checked + .rating-btn {
+  background: hsl(217, 12%, 63%);
+  color: white;
+}
+
+/* ---------- BOTÓN ---------- */
+.btn {
+  width: 100%;
+  padding: 23px;
+  border-radius: 19px;
+  border: none;
+  background: hsl(25, 97%, 53%);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.btn:hover {
+  background: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- THANK YOU ---------- */
+.card-thanks {
+  text-align: center;
+}
+
+.pill {
+  background: hsl(213, 19%, 23%);
+  color: hsl(25, 97%, 53%);
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
