@@ -10,6 +10,59 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <main class="page">
+    <!-- VISTA 1: Rating -->
+      <section class="card-rating" id="rating-view">
+        <div class="card-icon" aria-hidden="true">
+          <img src="./Imagenes/icon-star.svg" alt="Icono de estrella" class="card-icon-img">
+        </div>
+
+        <h2 class="card-title">¿Cómo lo hicimos?</h2>
+
+        <p class="card-text">
+          Por favor, haznos saber cómo lo hicimos con tu solicitud de soporte.
+          Todos los comentarios son bienvenidos para ayudarnos a mejorar nuestra oferta.
+        </p>
+
+        <form class="rating" id="rating-form">
+          <fieldset class="rating-fieldset">
+
+            <div class="rating-options" role="radiogroup" aria-label="Puntuación">
+              <input class="sr-only" type="radio" name="score" id="score-1" value="1" />
+              <label class="rating-btn" for="score-1">1</label>
+
+              <input class="sr-only" type="radio" name="score" id="score-2" value="2" />
+              <label class="rating-btn" for="score-2">2</label>
+
+              <input class="sr-only" type="radio" name="score" id="score-3" value="3" />
+              <label class="rating-btn" for="score-3">3</label>
+
+              <input class="sr-only" type="radio" name="score" id="score-4" value="4" />
+              <label class="rating-btn" for="score-4">4</label>
+
+              <input class="sr-only" type="radio" name="score" id="score-5" value="5" />
+              <label class="rating-btn" for="score-5">5</label>
+            </div>
+          </fieldset>
+
+          <button class="btn" type="submit" id="submit-btn" disabled>ENVIAR</button>
+        </form>
+      </section>
+
+      <!-- VISTA 2: Thank you -->
+      <section class="card-thanks" aria-label="Gracias" id="thanks-view">
+        <div class="card-illustration" aria-hidden="true"></div>
+
+        <p class="pill" id="selected-pill">Seleccionaste <span id="selected-score">?</span> de 5</p>
+
+        <h2 class="card-title">¡Gracias!</h2>
+
+        <p class="card-text">
+          Agradecemos que te hayas tomado el tiempo de dar una calificación.
+          Si alguna vez necesitas más ayuda, no dudes en volver a ponerte en contacto con nosotros.
+        </p>
+      </section>
+    </main>
+  </body>
 </body>
 </html>
